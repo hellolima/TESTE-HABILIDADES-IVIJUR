@@ -1,0 +1,55 @@
+{
+    "vendas": [
+      {
+        "produto": "Smartphone",
+        "quantidade": 15,
+        "preço": 800.00
+      },
+      {
+        "produto": "Notebook",
+        "quantidade": 5,
+        "preço": 1200.00
+      },
+      {
+        "produto": "Tablet",
+        "quantidade": 30,
+        "preço": 500.00
+      },
+      {
+        "produto": "Smartwatch",
+        "quantidade": 20,
+        "preço": 300.00
+      },
+      {
+        "produto": "Fones de Ouvido Bluetooth",
+        "quantidade": 120,
+        "preço": 100.00
+      },
+      {
+        "produto": "Câmera Profissional",
+        "quantidade": 2,
+        "preço": 1500.00
+      },
+      {
+        "produto": "Console",
+        "quantidade": 5,
+        "preço": 4000.00
+      },
+      {
+        "produto": "Monitor UltraWide",
+        "quantidade": 20,
+        "preço": 700.00
+      },
+      {
+        "produto": "Impressora 3D",
+        "quantidade": 10,
+        "preço": 1000.00
+      },
+      {
+        "produto": "Roteador Wi-Fi",
+        "quantidade": 40,
+        "preço": 80.00
+      }
+    ]
+  }
+  
