@@ -1,25 +1,25 @@
 from fastapi import FastAPI
 import uvicorn
 
-from services import User, create_user, get_user
+from services import User, createUser, getUser
 
 app = FastAPI()
 
 # Endpoint para criar um novo usuário
 @app.post("/create-user")
-def create_user_endpoint(user: User):
-    user_id, user_data = create_user(user)
-    return {"user_id": user_id, "user_data": user_data}
+def createUserEndpoint(user: User):
+    userId, userData = createUser(user)
+    return {"userId": userId, "userData": userData}
 
 
 # Endpoint para obter os dados de um usuário com base no ID
-@app.get("/get-user/{user_id}")
-def get_user_endpoint(user_id: int):
-    user_id, user_data = get_user(user_id)
-    if user_id is not None:
-        return {"user_id": user_id, "user_data": user_data}
+@app.get("/get-user/{userId}")
+def getUserEndpoint(userId: int):
+    userId, userData = getUser(userId)
+    if userId is not None:
+        return {"userId": userId, "userData": userData}
     else:
-        return user_data
+        return userData
 
 
 if __name__ == "__main__":

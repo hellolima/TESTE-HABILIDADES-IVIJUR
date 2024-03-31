@@ -9,14 +9,14 @@ class User(BaseModel):
 db_users = {}
 
 
-def create_user(user: User):
-    user_id = len(db_users) + 1
-    db_users[user_id] = user
-    return user_id, user
+def createUser(user: User):
+    userID = len(db_users) + 1
+    db_users[userID] = user
+    return userID, user
 
 
-def get_user(user_id: int):
-    if user_id in db_users:
-        return user_id, db_users[user_id]
+def getUser(userID: int):
+    if userID in db_users:
+        return userID, db_users[userID]
     else:
         return None, {"error": "User ID not found"}
